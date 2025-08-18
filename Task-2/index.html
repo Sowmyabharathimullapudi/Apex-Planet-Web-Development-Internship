@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>✨ Creative HTML, CSS & JavaScript Project ✨</h1>
+</header>
+
+<nav>
+    <a href="#form">📬 Contact Form</a>
+    <a href="#todo">📝 To-Do List</a>
+    <a href="#gallery">🖼 Image Gallery</a>
+</nav>
+
+<div class="container">
+    <!-- Contact Form -->
+    <div id="form" class="card">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- To-Do List -->
+    <div id="todo" class="card">
+        <h2>To-Do List</h2>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Add a task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Image Gallery -->
+    <div id="gallery" class="card">
+        <h2>Image Gallery</h2>
+        <div class="input-group">
+            <input type="text" id="imgUrl" placeholder="Enter image URL...">
+            <button onclick="addImage()">Add Image</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
